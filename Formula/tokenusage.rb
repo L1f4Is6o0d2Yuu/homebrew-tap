@@ -1,16 +1,16 @@
 class Tokenusage < Formula
   desc "Agent CLI for the tokenusage.online dashboard"
   homepage "https://tokenusage.online"
-  url "https://github.com/L1f4Is6o0d2Yuu/tokenusage/archive/refs/tags/v0.18.2.tar.gz"
-  sha256 "90bff4ba852c24cc4a1aea64ad791b01bb69a3825aa6d27f371e1fbc475ad69b"
+  url "https://github.com/L1f4Is6o0d2Yuu/tokenusage/archive/refs/tags/v0.19.2.tar.gz"
+  sha256 "81c2f5db63107251b7c04817a20e6d06ccc12517f80283f9cff0f71331023e9e"
   license "MIT"
-  version "0.18.2"
+  version "0.19.2"
 
   def install
     bin.install "agent/tokenusage"
   end
 
   test do
-    assert_match "tokenusage 0.18.2", shell_output("#{bin}/tokenusage version")
+    assert_match "tokenusage 0.19.2", shell_output("#{bin}/tokenusage version")
   end
 end
